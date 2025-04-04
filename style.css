@@ -1,0 +1,141 @@
+.profile {
+    vertical-align: middle;
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: left;
+}
+
+/* Introduction text section */
+.intro-text {
+    max-width: 600px; /* Control width of the text */
+}
+
+/* Body styles */
+body {
+    margin: 0;
+    line-height: 1.5;
+    font: 100%/1.5 system-ui;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #AC9DF2;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 30px;
+    padding-top: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* CV Header Styling */
+.cv_header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Links styling */
+.cv_links {
+    color: #82659D;
+}
+
+.cv_links:hover {
+    text-decoration: underline;
+}
+
+/* Heading styles */
+h1 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+h2 {
+    border-bottom: 2px solid #82659D;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Article styling */
+article {
+    margin-bottom: 25px;
+}
+
+/* Heading container */
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.heading-container p {
+    margin: 5px;
+    padding: 0;
+}
+
+/* Dates container */
+.dates {
+    display: flex;
+    align-items: center;
+}
+
+/* Side info styling */
+.side-info {
+    font-style: italic;
+}
+
+/* List styles */
+ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
