@@ -1,6 +1,6 @@
 .profile {
     vertical-align: middle;
-    width: 250px;
+    width: 18%;
     height: auto;
     border-radius: 50%;
     margin-right: 20px;
@@ -17,13 +17,12 @@
 
 /* Introduction text section */
 .intro-text {
-    max-width: 600px;
+    max-width: 50%;
 }
 
 /* Body styles */
 body {
     margin: 0;
-    line-height: 1.5;
     font: 100%/1.5 system-ui;
     box-sizing: border-box;
     width: 100%;
