@@ -160,29 +160,16 @@ div.cv {
   }
 }
 
-/* form {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    padding: 0 2em;
-    margin: 0 auto;
-    gap: 1em;
-
-    label {
-        grid-template-columns: subgrid;
-        grid-column: 1 / -1;
-    }
-} */
-
 form {
     display: grid;
     grid-template-columns: auto 1fr;
     padding: 1.5em;
     margin: 2em auto;
     gap: 1.5em;
-    max-width: 600px; /* Set a max width for the form */
-    background-color: #f9f9f9; /* Light background color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -190,8 +177,9 @@ label {
     grid-template-columns: subgrid;
     grid-column: 1 / -1;
     font-weight: bold;
+    padding-right: 2em;
     margin-bottom: 0.5em;
-    color: var(--color-accent); /* Accent color for labels */
+    color: var(--color-accent);
 }
 
 input,
@@ -204,8 +192,8 @@ textarea {
 }
 
 textarea {
-    resize: vertical; /* Allow vertical resizing */
-    min-height: 150px; /* Set a minimum height */
+    resize: vertical;
+    min-height: 150px;
 }
 
 button {
@@ -220,5 +208,5 @@ button {
 }
 
 button:hover {
-    background-color: #9a82d1; /* Slightly darker accent color on hover */
+    background-color: #9a82d1;
 }
