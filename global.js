@@ -59,6 +59,14 @@ let select = document.querySelector("label.color-scheme select");
 if ("colorScheme" in localStorage) {
     select.value = localStorage.colorScheme;
     setColorScheme(localStorage.colorScheme);
+} else {
+    if (matchMedia("(prefers-color-scheme: dark)").matches) {
+        select.value = "dark";
+        setColorScheme("dark");
+    } else {
+        select.value = "light";
+        setColorScheme("light");
+    }
 }
 
 select.addEventListener('input', function (event) {
