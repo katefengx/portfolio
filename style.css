@@ -48,7 +48,7 @@ header {
     margin-bottom: 0;
   
     a {
-      color: #82659D;
+      color: var(--color-accent);
       text-decoration: none;
   
       &:hover {
@@ -104,7 +104,7 @@ div.cv {
     }
 
     h2 {
-      border-bottom: 0.125em solid #82659D;
+      border-bottom: 0.125em solid var(--color-accent);
       padding-bottom: 0.5em;
       text-align: left;
     }
@@ -218,5 +218,3 @@ label.color-scheme {
     font-family: inherit;
     font-size: 80%
 }
-
-
