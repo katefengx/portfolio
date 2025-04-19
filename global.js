@@ -9,6 +9,7 @@ let pages = [
     { url: 'projects/', title: 'Projects' },
     { url: 'contact/', title: 'Contact' },
     { url: 'cv/', title: 'CV' },
+    { url: 'https://github.com/katefengx', title: 'GitHub'}
 ];
 
 let nav = document.createElement('nav');
@@ -28,13 +29,18 @@ for (let p of pages) {
 
 let navLinks = $$("nav a");
 
+for (let a of navLinks) {
+    if (a.host !== location.host) {
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+    }
+}
+
 let currentLink = navLinks.find(
     (a) => a.host === location.host && a.pathname === location.pathname,
 );
 
-
 currentLink?.classList.add('current');
-
 
 // drop down menu for light/dark
 
