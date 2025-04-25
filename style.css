@@ -8,6 +8,7 @@ body {
     max-width: 100em;
     margin-inline: auto;
     box-sizing: border-box;
+    padding: 0 2em;
   }
 
 h1 {
@@ -144,22 +145,10 @@ div.cv {
       
   }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-  gap: 1.5em;
-  padding: 1.5em;
-
-article {
-    grid-template-rows: subgrid;
-    grid-row: span 3;
-}
-
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    line-height: 1.1;
-    text-wrap: balance;
-  }
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: 1.1;
+  text-wrap: balance;
 }
 
 form {
@@ -217,4 +206,73 @@ label.color-scheme {
     right: 1rem;
     font-family: inherit;
     font-size: 80%
+}
+
+.profile-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.5em 2em;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2em;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.profile-stats-grid dt,
+.profile-stats-grid dd {
+  margin: 0;
+}
+
+.profile-stats-heading {
+  text-align: center;
+  font-size: 1rem;
+  margin: 1em auto;
+  opacity: 0.9;
+  color: var(--text-color, #444);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  gap: 2em;
+  padding: 2em;
+  justify-content: center;
+}
+
+.projects article a {
+  display: block;
+  color: inherit; /* Keeps text color consistent */
+  height: 100%;
+}
+
+.projects article {
+  border: 1px solid #ddd;
+  padding: 1em;
+  border-radius: 0.5em;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projects article:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects article h2,
+.projects article h3 {
+  font-size: 1.2rem;
+  margin: 0.5em 0;
+  color: var(--text-color, #333); /* optional */
+}
+
+.projects img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+h1.projects-title, h2 {
+  text-align: center;
 }

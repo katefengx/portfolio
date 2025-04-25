@@ -97,3 +97,68 @@ form?.addEventListener('submit', function (event){
     let url = form.action + "?" + params.join("&");
     location.href = url;
 })
+
+// Projects Page
+
+export async function fetchJSON(url) {
+    try {
+        const response = await fetch(url);
+        console.log(response);
+
+        if (!response.ok) {
+            throw new Error(`Failed to fetch projects: ${response.statusText}`);
+        }
+        const data = await response.json();
+        console.log("Fetched Projects Data:", data);
+        return data;
+
+    } catch (error) {
+        console.error('Error fetching or parsing JSON data:', error);
+    }
+}
+
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+    containerElement.innerHTML = '';
+    const validHeadings = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+
+    if (!validHeadings.includes(headingLevel)) {
+        console.warn(`Invalid headingLevel "${headingLevel}" passed. Defaulting to "h2".`);
+        headingLevel = 'h2';
+    }
+
+    for (const project of projects) {
+        const article = document.createElement('article');
+    
+        const link = document.createElement('a');
+        link.href = project.link || '#';
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.style.textDecoration = 'none';
+    
+        const heading = document.createElement(headingLevel);
+        heading.textContent = project.title;
+    
+        const img = document.createElement('img');
+        img.src = project.image;
+        img.alt = project.title;
+        img.onerror = () => {
+            console.warn(`Image not found for project: ${project.title}`);
+            img.src = 'https://i.pinimg.com/736x/d7/67/ef/d767effce525cda3e2bb6c8d35625f61.jpg'; // fallback image if you want
+        };
+    
+        const description = document.createElement('p');
+        description.textContent = project.description;
+    
+        link.appendChild(heading);
+        link.appendChild(img);
+        link.appendChild(description);
+        article.appendChild(link);
+    
+        containerElement.appendChild(article);
+    }
+    
+}
+
+export async function fetchGitHubData(username) {
+    return fetchJSON(`https://api.github.com/users/${username}`);
+}
