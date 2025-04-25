@@ -4,7 +4,7 @@ const BASE_PATH = (location.hostname === "localhost" || location.hostname === "1
     ? "../"                  // Local server
     : "/portfolio/";         // GitHub Pages repo name
 
-const projects = await fetchJSON(`${BASE_PATH}/lib/projects.json`);
+const projects = await fetchJSON(`${BASE_PATH}lib/projects.json`);
 
 const projectsContainer = document.querySelector('.projects');
 const projectsTitle = document.querySelector('.projects-title');
