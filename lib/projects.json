@@ -2,14 +2,14 @@
     {
         "title": "California's Montessori Community",
         "year": "2025",
-        "image": "../images/CA_Dashboard.jpg",
+        "image": "/images/CA_Dashboard.jpg",
         "description": "Led the creation of this dashboard on Tableau for my internship at Y Montessori. This was the second dashboard in the Montessori Data Lens program.",
         "link": "https://public.tableau.com/app/profile/isabellacai/viz/FINALDASHBOARD_17393155414190/FINALDASHBOARD"
     },
     {
         "title": "The 2025 Montessori Experience",
         "year": "2025",
-        "image": "../images/AMI_Dashboard.jpg",
+        "image": "/images/AMI_Dashboard.jpg",
         "description": "Solely developed this dashboard — from data processing and design to publishing — during my internship at Y Montessori for our client, AMI USA.",
         "link": "https://public.tableau.com/app/profile/isabellacai/viz/The2025MontessoriExperienceadjusted/FINALDASHBOARD"
     },
