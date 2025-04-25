@@ -62,7 +62,7 @@ div.intro {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 60vh;
 
     h1 {
         text-align: left;
@@ -210,11 +210,12 @@ label.color-scheme {
 
 .profile-stats-grid {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(auto);
   gap: 0.5em 2em;
   text-align: center;
   justify-content: center;
-  margin-bottom: 2em;
+  margin: 1em 2em;
+  padding: 0em 2em;
   font-size: 0.9rem;
   opacity: 0.85;
 }
@@ -229,7 +230,6 @@ label.color-scheme {
   font-size: 1rem;
   margin: 1em auto;
   opacity: 0.9;
-  color: var(--text-color, #444);
 }
 
 .projects {
@@ -263,7 +263,6 @@ label.color-scheme {
 .projects article h3 {
   font-size: 1.2rem;
   margin: 0.5em 0;
-  color: var(--text-color, #333); /* optional */
 }
 
 .projects img {
@@ -275,4 +274,5 @@ label.color-scheme {
 
 h1.projects-title, h2 {
   text-align: center;
+  margin-top: 1em;
 }

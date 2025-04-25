@@ -1,11 +1,14 @@
-import { fetchJSON, renderProjects, fetchGitHubData } from '/global.js';
+import { fetchJSON, renderProjects, fetchGitHubData } from './global.js';
 
-const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-    ? "../"                  // Local server
-    : "https://katefengx.github.io/portfolio/";         // GitHub Pages repo name
-
-const projects = await fetchJSON(`${BASE_PATH}lib/projects.json`);
+const projects = await fetchJSON('./lib/projects.json');
 const latestProjects = projects.slice(0, 3);
+
+// const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+//     ? "../"                  // Local server
+//     : "https://katefengx.github.io/portfolio/";         // GitHub Pages repo name
+
+// const projects = await fetchJSON(`${BASE_PATH}lib/projects.json`);
+// const latestProjects = projects.slice(0, 3);
 
 const projectsContainer = document.querySelector('.projects');
 
