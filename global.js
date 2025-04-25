@@ -143,7 +143,7 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
         img.alt = project.title;
         img.onerror = () => {
             console.warn(`Image not found for project: ${project.title}`);
-            img.src = 'https://i.pinimg.com/736x/d7/67/ef/d767effce525cda3e2bb6c8d35625f61.jpg'; // fallback image if you want
+            img.src = 'https://i.pinimg.com/736x/d7/67/ef/d767effce525cda3e2bb6c8d35625f61.jpg'; // fallback image
         };
     
         const description = document.createElement('p');
@@ -160,5 +160,14 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
 }
 
 export async function fetchGitHubData(username) {
-    return fetchJSON(`https://api.github.com/users/${username}`);
+    try {
+        const res = await fetch(`https://api.github.com/users/${username}`);
+        if (!res.ok) {
+            throw new Error(`GitHub API error: ${res.status}`);
+        }
+        return await res.json();
+    } catch (err) {
+        console.error("Failed to fetch GitHub data:", err);
+        return null;
+    }
 }

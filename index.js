@@ -17,7 +17,6 @@ if (profileStats) {
             <div><dt>FOLLOWING</dt><dd>${githubData.following}</dd></div>
         </dl>
         `;
-
 }
 
 renderProjects(latestProjects, projectsContainer, 'h2');
