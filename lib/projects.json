@@ -17,7 +17,8 @@
         "title": "Predicting Power Outages",
         "year": "2025",
         "image": "https://katefengx.github.io/portfolio/images/outage-plot.png",
-        "description": "Analyzed U.S. power outage data and built a classification model (Random Forest) to predict customer impact levels based on features such as outage duration, cause, population density, and climate region."
+        "description": "Analyzed U.S. power outage data and built a classification model (Random Forest) to predict customer impact levels based on features such as outage duration, cause, population density, and climate region.",
+        "link": "https://katefengx.github.io/power-outage-prediction/"
     },
     {
         "title": "Sit omnis in eos.",
