@@ -91,22 +91,36 @@ function renderPieChart(projectsGiven) {
                 d3.selectAll('.legend li')
                     .classed('selected', false);
 
-                d3.select(event.target) 
-                    .classed('selected', true) 
-                    .attr('opacity', 1);
+                if (selectedIndex !== -1) {
+                    // Re-apply styles to selected slice and legend item
+                    d3.select(event.target)
+                        .classed('selected', true)
+                        .attr('opacity', 1);
                 
-                d3.select(`.legend-${idx}`)
-                .classed('selected', !d3.select(`.legend-${idx}`).classed('selected'));
-                
-                const selectedYear = data[selectedIndex].label;
-                const filteredProjects = projects.filter(project =>
-                    project.year === selectedYear &&
-                    Object.values(project).join(' ').toLowerCase().includes(searchQuery)
-                );
-                renderProjects(filteredProjects, projectsContainer, 'h2');
-            });
+                    d3.select(`.legend-${idx}`)
+                        .classed('selected', true);
 
-    });
+                    // Filter projects by year + query
+                    const selectedYear = data[selectedIndex].label;
+                    const filteredProjects = projects.filter(project =>
+                        project.year === selectedYear &&
+                        Object.values(project).join(' ').toLowerCase().includes(searchQuery)
+                    );
+                    renderProjects(filteredProjects, projectsContainer, 'h2');
+                } else {
+                    // Show all projects if no slice is selected and query is empty
+                    if (searchQuery === '') {
+                        renderProjects(projects, projectsContainer, 'h2');
+                    } else {
+                        // Show search-filtered projects only
+                        const filteredByQuery = projects.filter(project =>
+                            Object.values(project).join(' ').toLowerCase().includes(searchQuery)
+                        );
+                        renderProjects(filteredByQuery, projectsContainer, 'h2');
+                    }
+                }
+            });
+        });
 }
 
 renderPieChart(projects);

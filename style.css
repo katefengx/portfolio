@@ -283,6 +283,16 @@ h1.projects-title, h2 {
   gap: 2em;
   margin-block: 2em;
   justify-content: center;
+  flex-direction: column;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 #projects-pie-plot {
