@@ -39,7 +39,7 @@ function renderPieChart(projectsGiven) {
     svg.selectAll('path').remove();
     d3.select('.legend').selectAll('li').remove();
 
-    let colors = d3.scaleOrdinal(d3.schemeTableau10);
+    let colors = d3.scaleOrdinal(d3.schemePaired);
 
     let rolledData = d3.rollups(
       projectsGiven,
