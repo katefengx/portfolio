@@ -146,14 +146,25 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
             img.src = 'https://i.pinimg.com/736x/d7/67/ef/d767effce525cda3e2bb6c8d35625f61.jpg'; // fallback image
         };
     
+        const textWrapper = document.createElement('div');
+        textWrapper.classList.add('project-text');
+
         const description = document.createElement('p');
         description.textContent = project.description;
-    
+
+        const year = document.createElement('p');
+        year.textContent = `Year: ${project.year}`;
+        year.classList.add('project-year');
+
+        textWrapper.appendChild(description);
+        textWrapper.appendChild(year);
+
+        // Add everything to link and article
         link.appendChild(heading);
         link.appendChild(img);
-        link.appendChild(description);
+        link.appendChild(textWrapper);
+
         article.appendChild(link);
-    
         containerElement.appendChild(article);
     }
     
