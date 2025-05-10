@@ -1,77 +1,77 @@
 [
-    {
-        "title": "California's Montessori Community",
-        "year": "2025",
-        "image": "https://katefengx.github.io/portfolio/images/CA_Dashboard.jpg",
-        "description": "Led the creation of the second Tableau dashboard for the Montessori Data Lens program during my internship at Y Montessori. This dashboard analyzes the distribution and information of California Montessori schools.",
-        "link": "https://public.tableau.com/app/profile/isabellacai/viz/FINALDASHBOARD_17393155414190/FINALDASHBOARD"
-    },
-    {
-        "title": "The 2025 Montessori Experience",
-        "year": "2025",
-        "image": "https://katefengx.github.io/portfolio/images/AMI_Dashboard.jpg",
-        "description": "Solely developed this dashboard — from data processing and design to publishing — during my internship at Y Montessori for our client, AMI USA.",
-        "link": "https://public.tableau.com/app/profile/isabellacai/viz/The2025MontessoriExperienceadjusted/FINALDASHBOARD"
-    },
-    {
-        "title": "Predicting Power Outages",
-        "year": "2025",
-        "image": "https://katefengx.github.io/portfolio/images/outage-plot.png",
-        "description": "Analyzed U.S. power outage data and built a classification model (Random Forest) to predict customer impact levels based on features such as outage duration, cause, population density, and climate region.",
-        "link": "https://katefengx.github.io/power-outage-prediction/"
-    },
-    {
-        "title": "Sit omnis in eos.",
-        "year": "2024",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Culpa necessitatibus quasi ipsum similique nulla assumenda vero commodi! Esse consequatur dolor alias quae illum, cupiditate quod veritatis optio eos eius natus aspernatur odit suscipit magnam quo voluptas repudiandae sapiente."
-    },
-    {
-        "title": "Facere eaque excepturi nam.",
-        "year": "2024",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Obcaecati debitis et dolor quo veniam saepe commodi placeat enim. Facilis, cum minus commodi sapiente at dicta sint quisquam aliquam quo facere perspiciatis, dolore minima. Magni aperiam excepturi in magnam!"
-    },
-    {
-        "title": "A sed ducimus ullam.",
-        "year": "2023",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Hic placeat nostrum optio autem magni enim officiis amet corrupti molestiae temporibus laborum nemo sunt dolorem velit consequuntur repellendus pariatur et, possimus, esse omnis vel quam sequi. Delectus, velit quam."
-    },
-    {
-        "title": "Amet rem excepturi iure.",
-        "year": "2024",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Deleniti necessitatibus maiores soluta accusamus? Recusandae expedita tempora, exercitationem provident explicabo nisi natus aperiam illo dolorum minus quibusdam earum? Tempora aut voluptatum id quod, ratione magnam delectus quasi optio autem?"
-    },
-    {
-        "title": "Excepturi placeat dolorem cum.",
-        "year": "2024",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Nobis ipsam iste nesciunt laboriosam ea facilis pariatur voluptatem officia debitis eveniet delectus vitae, modi explicabo deserunt totam assumenda non reprehenderit. Ullam blanditiis, similique animi ea quas enim aut ipsa!"
-    },
-    {
-        "title": "Voluptates, quod. Molestias, cum?",
-        "year": "2022",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Dicta quibusdam commodi quaerat eligendi tempora, incidunt quasi mollitia facilis vel. Eius pariatur tempore voluptates quae expedita doloribus suscipit libero. Veritatis placeat eum voluptate autem possimus mollitia beatae eaque perspiciatis?"
-    },
-    {
-        "title": "Officia provident dicta neque!",
-        "year": "2023",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Laudantium illo quam molestiae cupiditate, labore quaerat totam esse dolore tempore atque ullam iure ex non deserunt eaque in inventore magni nemo voluptatum similique praesentium assumenda. Distinctio, esse. Eos, atque."
-    },
-    {
-        "title": "Aspernatur porro doloribus animi.",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Quis ratione dolore deserunt cumque fugiat eveniet obcaecati. Expedita obcaecati aspernatur nesciunt illo facilis ipsam sequi officia sunt ratione, nihil fugiat optio consectetur libero odit voluptates quo nam rerum. Dicta?"
-    },
-    {
-        "title": "Similique quam ipsam possimus!",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Commodi recusandae voluptatibus voluptates rem nostrum, ea quasi vero incidunt explicabo delectus quam possimus tenetur, vel ullam laudantium numquam deleniti non nihil architecto deserunt quidem saepe. Inventore quia quaerat ut."
-    }
+  {
+    "title": "California's Montessori Community",
+    "year": "2025",
+    "image": "https://katefengx.github.io/portfolio/images/CA_Dashboard.jpg",
+    "description": "Led the creation of the second Tableau dashboard for the Montessori Data Lens program during my internship at Y Montessori. This dashboard analyzes the distribution and information of California Montessori schools.",
+    "link": "https://public.tableau.com/app/profile/isabellacai/viz/FINALDASHBOARD_17393155414190/FINALDASHBOARD"
+  },
+  {
+    "title": "The 2025 Montessori Experience",
+    "year": "2025",
+    "image": "https://katefengx.github.io/portfolio/images/AMI_Dashboard.jpg",
+    "description": "Solely developed this dashboard — from data processing and design to publishing — during my internship at Y Montessori for our client, AMI USA.",
+    "link": "https://public.tableau.com/app/profile/isabellacai/viz/The2025MontessoriExperienceadjusted/FINALDASHBOARD"
+  },
+  {
+    "title": "Predicting Power Outages",
+    "year": "2025",
+    "image": "https://katefengx.github.io/portfolio/images/outage-plot.png",
+    "description": "Analyzed U.S. power outage data and built a classification model (Random Forest) to predict customer impact levels based on features such as outage duration, cause, population density, and climate region.",
+    "link": "https://katefengx.github.io/power-outage-prediction/"
+  },
+  {
+    "title": "Sit omnis in eos.",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Culpa necessitatibus quasi ipsum similique nulla assumenda vero commodi! Esse consequatur dolor alias quae illum, cupiditate quod veritatis optio eos eius natus aspernatur odit suscipit magnam quo voluptas repudiandae sapiente."
+  },
+  {
+    "title": "Facere eaque excepturi nam.",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Obcaecati debitis et dolor quo veniam saepe commodi placeat enim. Facilis, cum minus commodi sapiente at dicta sint quisquam aliquam quo facere perspiciatis, dolore minima. Magni aperiam excepturi in magnam!"
+  },
+  {
+    "title": "A sed ducimus ullam.",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Hic placeat nostrum optio autem magni enim officiis amet corrupti molestiae temporibus laborum nemo sunt dolorem velit consequuntur repellendus pariatur et, possimus, esse omnis vel quam sequi. Delectus, velit quam."
+  },
+  {
+    "title": "Amet rem excepturi iure.",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Deleniti necessitatibus maiores soluta accusamus? Recusandae expedita tempora, exercitationem provident explicabo nisi natus aperiam illo dolorum minus quibusdam earum? Tempora aut voluptatum id quod, ratione magnam delectus quasi optio autem?"
+  },
+  {
+    "title": "Excepturi placeat dolorem cum.",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Nobis ipsam iste nesciunt laboriosam ea facilis pariatur voluptatem officia debitis eveniet delectus vitae, modi explicabo deserunt totam assumenda non reprehenderit. Ullam blanditiis, similique animi ea quas enim aut ipsa!"
+  },
+  {
+    "title": "Voluptates, quod. Molestias, cum?",
+    "year": "2022",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Dicta quibusdam commodi quaerat eligendi tempora, incidunt quasi mollitia facilis vel. Eius pariatur tempore voluptates quae expedita doloribus suscipit libero. Veritatis placeat eum voluptate autem possimus mollitia beatae eaque perspiciatis?"
+  },
+  {
+    "title": "Officia provident dicta neque!",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Laudantium illo quam molestiae cupiditate, labore quaerat totam esse dolore tempore atque ullam iure ex non deserunt eaque in inventore magni nemo voluptatum similique praesentium assumenda. Distinctio, esse. Eos, atque."
+  },
+  {
+    "title": "Aspernatur porro doloribus animi.",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Quis ratione dolore deserunt cumque fugiat eveniet obcaecati. Expedita obcaecati aspernatur nesciunt illo facilis ipsam sequi officia sunt ratione, nihil fugiat optio consectetur libero odit voluptates quo nam rerum. Dicta?"
+  },
+  {
+    "title": "Similique quam ipsam possimus!",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Commodi recusandae voluptatibus voluptates rem nostrum, ea quasi vero incidunt explicabo delectus quam possimus tenetur, vel ullam laudantium numquam deleniti non nihil architecto deserunt quidem saepe. Inventore quia quaerat ut."
+  }
 ]
