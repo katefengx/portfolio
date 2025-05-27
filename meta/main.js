@@ -238,7 +238,12 @@ function renderScatterPlot(data, commits) {
   const xAxis = d3.axisBottom(xScale);
   const yAxis = d3
     .axisLeft(yScale)
-    .tickFormat((d) => String(d % 24).padStart(2, '0') + ':00');
+    .tickFormat((d) => {
+      const hours = Math.floor(d);
+      const minutes = Math.round((d - hours) * 60);
+      return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+    });
+    
 
   svg
     .append('g')
@@ -303,7 +308,14 @@ function updateScatterPlot(data, commits) {
     .range([usableArea.bottom, usableArea.top]);
 
   const xAxis = d3.axisBottom(xScale);
-  const yAxis = d3.axisLeft(yScale);
+  const yAxis = d3
+    .axisLeft(yScale)
+    .tickFormat((d) => {
+      const hours = Math.floor(d);
+      const minutes = Math.round((d - hours) * 60);
+      return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+    });
+
 
   const [minLines, maxLines] = d3.extent(commits, (d) => d.totalLines);
   const rScale = d3.scaleSqrt().domain([minLines, maxLines]).range([2, 30]);
