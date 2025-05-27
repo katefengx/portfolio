@@ -244,7 +244,6 @@ function renderScatterPlot(data, commits) {
       return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
     });
     
-
   svg
     .append('g')
     .attr('transform', `translate(0, ${usableArea.bottom})`)
